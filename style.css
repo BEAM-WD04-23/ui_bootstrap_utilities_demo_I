@@ -1,0 +1,29 @@
+#myDiv{
+    margin-left: 10%;
+    width: 80%;
+    height: auto;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card{
+    width: 250px;
+}
+
+/* mediaquery */
+
+@media only screen and (max-width: 600px) {
+    #myDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 2%;
+    }
+    .card{
+        width: 100%;
+        margin-top: 2%;
+    }
+  }
+

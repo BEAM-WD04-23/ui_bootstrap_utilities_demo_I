@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Tooltips</title>
+</head>
+<body>
+    <h1>Tooltips</h1>
+        <p>tooltips on buttons</p>
+    <button type="button" id="myTooltips" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="show bottom">
+       tooltips in action!
+      </button>
+<!--  -->
+      <button type="button" id="myTooltips" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="show msg top">
+        tooltips in action!
+       </button>
+
+<!--  -->
+
+    <h1>tooltips on anchors/links</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="https:www.bbc.com" id="myTooltips" 
+        data-bs-placement="bottom" data-bs-title="show msg top" target="_blank">bbc</a> Fugiat ipsam facilis debitis excepturi tempora 
+        suscipit eius accusantium 
+    </p>
+
+
+
+
+
+<!--  -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+
+<!-- js link: make sure the id name is the same as in our button or anchor-tag -->
+<script>
+    let tooltips = document.querySelectorAll('#myTooltips')
+       tooltips.forEach(element => {
+               new bootstrap.Tooltip(element)
+       });
+</script>
+
+</body>
+</html>
